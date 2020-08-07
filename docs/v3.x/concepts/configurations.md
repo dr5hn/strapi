@@ -186,11 +186,11 @@ module.exports = ({ env }) => ({
 | `admin.watchIgnoreFiles` | Add custom files that should not be watched during development. See more [here](https://github.com/paulmillr/chokidar#path-filtering) (property `ignored`). | Array(string) | `[]` |
 | `admin.host` | Use a different host for the admin panel. Only used along with `strapi develop --watch-admin` | string | `localhost` |
 | `admin.port` | Use a different port for the admin panel. Only used along with `strapi develop --watch-admin` | string | `8000` |
-| `admin.serveAdminPanel` | If false, the admin panel won't be served. Note: the `index.html` will still be served, see [defaultIndex option](./middlewares#global-middlewares) | boolean | `true` |
-| `admin.forgotPassword` | Settings to customize the forgot password email (see more here: [Forgot Password Email](../admin-panel/forgot-password)) | Object | {} |
-| `admin.forgotPassword.emailTemplate` | Email template as defined in [email plugin](../plugins/email#create-an-email-from-a-template-fillemailoptions) | Object | [Default template](https://github.com/strapi/strapi/tree/master/packages/strapi-admin/config/email-templates/forgot-password.js) |
-| `admin.forgotPassword.from` | Sender mail address | string | Default value defined in your [provider configuration](../plugins/email#configure-your-provider) |
-| `admin.forgotPassword.replyTo` | Default address or addresses the receiver is asked to reply to | string | Default value defined in your [provider configuration](../plugins/email#configure-your-provider) |
+| `admin.serveAdminPanel` | If false, the admin panel won't be served. Note: the `index.html` will still be served, see [defaultIndex option](./middlewares.html#core-middleware-configurations) | boolean | `true` |
+| `admin.forgotPassword` | Settings to customize the forgot password email (see more here: [Forgot Password Email](../admin-panel/forgot-password.html)) | Object | {} |
+| `admin.forgotPassword.emailTemplate` | Email template as defined in [email plugin](../plugins/email.html#programmatic-usage) | Object | [Default template](https://github.com/strapi/strapi/tree/master/packages/strapi-admin/config/email-templates/forgot-password.js) |
+| `admin.forgotPassword.from` | Sender mail address | string | Default value defined in your [provider configuration](../plugins/email.html#configure-the-plugin) |
+| `admin.forgotPassword.replyTo` | Default address or addresses the receiver is asked to reply to | string | Default value defined in your [provider configuration](../plugins/email.html#configure-the-plugin) |
 
 ## Functions
 
